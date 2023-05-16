@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uYZdUIKFhdf0cbMVIeJTjxNagS66Z0jnlmBoH1kKgcQ=",
+  "Hash": "A+kMf2nwE4fd8IBXMnRnn167A16H5sj3qLOKu5w/tEo=",
   "Source": "3rdBackendProject",
   "BasePath": "_content/3rdBackendProject",
   "Mode": "Default",
@@ -4267,6 +4267,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\3.png"
     },
     {
+      "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\40b05398-cea5-44fc-9086-a4b767319f16mood-2.jpg",
+      "SourceId": "3rdBackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\",
+      "BasePath": "_content/3rdBackendProject",
+      "RelativePath": "assets/images/website-images/40b05398-cea5-44fc-9086-a4b767319f16mood-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\40b05398-cea5-44fc-9086-a4b767319f16mood-2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\6acd3c20bdf91c7edcbad334ba841295.jpg",
       "SourceId": "3rdBackendProject",
       "SourceType": "Discovered",
@@ -4282,6 +4299,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\6acd3c20bdf91c7edcbad334ba841295.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\a7ce0beb-1f5d-4eee-9205-6298f5da4809mood-2.jpg",
+      "SourceId": "3rdBackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\",
+      "BasePath": "_content/3rdBackendProject",
+      "RelativePath": "assets/images/website-images/a7ce0beb-1f5d-4eee-9205-6298f5da4809mood-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\a7ce0beb-1f5d-4eee-9205-6298f5da4809mood-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\BWd6WMRCIAE2Qi4.jpg",
@@ -4384,23 +4418,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\Eq2eWEFXcAALrKX.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\FMX4OtXVQAEZ5rR.png",
-      "SourceId": "3rdBackendProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\",
-      "BasePath": "_content/3rdBackendProject",
-      "RelativePath": "assets/images/website-images/FMX4OtXVQAEZ5rR.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\FMX4OtXVQAEZ5rR.png"
     },
     {
       "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\h280_38646443.jpg",
@@ -4537,6 +4554,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\Screenshot 2023-05-10 215520.png"
+    },
+    {
+      "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\Screenshot 2023-05-14 182511.png",
+      "SourceId": "3rdBackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\",
+      "BasePath": "_content/3rdBackendProject",
+      "RelativePath": "assets/images/website-images/Screenshot 2023-05-14 182511.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\Screenshot 2023-05-14 182511.png"
     },
     {
       "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\service.png",

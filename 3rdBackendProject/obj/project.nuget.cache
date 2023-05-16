@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FwW+qwhCG3U4Lf/58TwAzzr8oGW3ln1JOnBAJF/GRLAwyZhuj8Y0HIM93cCLnZmuWPdhCzGyVsJZOTh4+m0iiA==",
+  "dgSpecHash": "LA0Cr/p6Xmbf91qjGjChO7UqLn5X0nUoKQlcGBU8gW/RjBZDN+wFkqe+nzWMXuboSdCuNEOFbmVoYBRt3tbx9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\3rdBackendProject.csproj",
   "expectedPackageFiles": [
@@ -102,6 +102,7 @@
     "C:\\Users\\Alber\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Alber\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Alber\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Alber\\.nuget\\packages\\servicestack.interfaces\\6.8.0\\servicestack.interfaces.6.8.0.nupkg.sha512",
     "C:\\Users\\Alber\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Alber\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Alber\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

@@ -2135,6 +2135,15 @@
           }
         }
       },
+      "ServiceStack.Interfaces/6.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/ServiceStack.Interfaces.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6555,6 +6564,20 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "ServiceStack.Interfaces/6.8.0": {
+      "sha512": "nuGklCCNPlCtJU0UQ0q5jeg3J+djI28aWWBTwH8GvTNC3E74cH+fS2aUiukiOOwW0X/Z3oIPdWHPZi4yiv77Kg==",
+      "type": "package",
+      "path": "servicestack.interfaces/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/ServiceStack.Interfaces.dll",
+        "lib/net6.0/ServiceStack.Interfaces.dll",
+        "lib/netstandard2.0/ServiceStack.Interfaces.dll",
+        "servicestack.interfaces.6.8.0.nupkg.sha512",
+        "servicestack.interfaces.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -10506,7 +10529,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
+      "ServiceStack.Interfaces >= 6.8.0"
     ]
   },
   "packageFolders": {
@@ -10571,6 +10595,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.13, )"
+          },
+          "ServiceStack.Interfaces": {
+            "target": "Package",
+            "version": "[6.8.0, )"
           }
         },
         "imports": [

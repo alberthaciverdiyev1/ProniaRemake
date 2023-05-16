@@ -1,5 +1,4 @@
-﻿
-@model Slide
+﻿@model Slide
 <div class="content-wrapper">
     <div class="row">
 
@@ -7,27 +6,31 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Create New Slide</h4>
-                   
+
                     <form class="forms-sample" enctype="multipart/form-data" method="post">
                         <div class="form-group">
                             <label for="exampleInputName1">Title</label>
-                            <input asp-for="Title" class="form-control" placeholder="Title">
+                            <input asp-for="Title" class="form-control" placeholder="Title" value="@Model.Title">
                             <span asp-validation-for="Title" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputName1">SubTitle</label>
-                            <input asp-for="SubTitle" class="form-control" placeholder="SubTitle">
+                            <input asp-for="SubTitle" class="form-control" placeholder="SubTitle" value="@Model.SubTitle">
                             <span asp-validation-for="SubTitle" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputName1">Description</label>
-                            <input asp-for="Description" class="form-control" placeholder="Description">
+                            <input asp-for="Description" class="form-control" placeholder="Description" value="@Model.Description">
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputName1">Order</label>
-                            <input asp-for="Order" class="form-control" placeholder="Order">
+                            <input asp-for="Order" class="form-control" placeholder="Order" value="@Model.Order">
                             <span asp-validation-for="Order" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <img src="~/assets/images/website-images//@Model.Image"
+                                 alt="slide" />
                         </div>
                         <div class="form-group">
                             <label for="exampleInputName1">Photo</label>

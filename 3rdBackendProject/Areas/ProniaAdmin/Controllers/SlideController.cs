@@ -21,5 +21,11 @@ namespace _3rdBackendProject.Areas.ProniaAdmin.Controllers
 
             return View(slides);
         }
+        public IActionResult Create() {
+
+
+
+            return View();
+        }
     }
 }

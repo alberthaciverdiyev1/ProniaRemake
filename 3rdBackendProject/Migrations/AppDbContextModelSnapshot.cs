@@ -39,6 +39,31 @@ namespace _3rdBackendProject.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("_3rdBackendProject.Models.Client", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProfessionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProfessionId");
+
+                    b.ToTable("Clients");
+                });
+
             modelBuilder.Entity("_3rdBackendProject.Models.Color", b =>
                 {
                     b.Property<int>("Id")
@@ -160,6 +185,44 @@ namespace _3rdBackendProject.Migrations
                     b.ToTable("ProductTags");
                 });
 
+            modelBuilder.Entity("_3rdBackendProject.Models.Profession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Professions");
+                });
+
+            modelBuilder.Entity("_3rdBackendProject.Models.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+                });
+
             modelBuilder.Entity("_3rdBackendProject.Models.Slide", b =>
                 {
                     b.Property<int>("Id")
@@ -207,6 +270,17 @@ namespace _3rdBackendProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("_3rdBackendProject.Models.Client", b =>
+                {
+                    b.HasOne("_3rdBackendProject.Models.Profession", "Profession")
+                        .WithMany("Clients")
+                        .HasForeignKey("ProfessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Profession");
                 });
 
             modelBuilder.Entity("_3rdBackendProject.Models.Product", b =>
@@ -281,6 +355,11 @@ namespace _3rdBackendProject.Migrations
                     b.Navigation("ProductImages");
 
                     b.Navigation("ProductTags");
+                });
+
+            modelBuilder.Entity("_3rdBackendProject.Models.Profession", b =>
+                {
+                    b.Navigation("Clients");
                 });
 
             modelBuilder.Entity("_3rdBackendProject.Models.Tag", b =>

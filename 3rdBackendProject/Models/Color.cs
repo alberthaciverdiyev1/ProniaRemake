@@ -1,9 +1,9 @@
-﻿namespace _3rdBackendProject.Models
+﻿using _3rdBackendProject.Models.Base;
+
+namespace _3rdBackendProject.Models
 {
-    public class Color
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+    public class Color:BaseEntity
+    {        public string Name { get; set; }
 
     }
 }

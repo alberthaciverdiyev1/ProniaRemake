@@ -1,10 +1,10 @@
 ﻿using _3rdBackendProject.Models;
+using _3rdBackendProject.Models.Base;
 
 namespace _3rdBackendProject.Models
 {
-    public class ProductTag
+    public class ProductTag:BaseEntity
     {
-        public int Id { get; set; }
 
         public int ProductId { get; set; }
         public int TagId { get; set; }

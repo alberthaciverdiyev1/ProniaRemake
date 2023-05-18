@@ -1,9 +1,8 @@
-﻿
-
-
-
-
-
+﻿@using _3rdBackendProject.Services;
+@inject LayoutService service;
+@{
+    Dictionary<string, string> settings = await service.GetSettingAsync();
+}
 
 
 <!DOCTYPE html>
@@ -105,11 +104,11 @@
                             <div class="header-middle-wrap position-relative">
                                 <div class="header-contact d-none d-lg-flex">
                                     <i class="pe-7s-call"></i>
-                                    <a href="tel://+00-123-456-789">+00 123 456 789</a>
+                                    <a href="tel://@settings["Phone"]">@settings["Phone"]</a>
                                 </div>
 
-                                <a href="index.html" class="header-logo">
-                                    <img src="~/assets/images/logo/dark.png" alt="Header Logo" />
+                                <a asp-action="index" asp-controller="home" class="header-logo">
+                                    <img src="~/assets/images/@settings["Logo"]" alt="Header Logo" />
                                 </a>
 
                                 <div class="header-right">
@@ -119,7 +118,7 @@
                                                class="search-btn bt"
                                                data-bs-toggle="modal"
                                                data-bs-target="#exampleModal">
-                                                <i class="pe-7s-search"></i>
+                                                @Html.Raw(settings["SearchIcon"])
                                             </a>
                                         </li>
                                         <li class="dropdown d-none d-lg-block">
@@ -129,7 +128,7 @@
                                                     data-bs-toggle="dropdown"
                                                     aria-label="setting"
                                                     aria-expanded="false">
-                                                <i class="pe-7s-users"></i>
+                                          @Html.Raw(settings["Community"])
                                             </button>
                                             <ul class="dropdown-menu"
                                                 aria-labelledby="settingButton">
@@ -143,12 +142,12 @@
                                         </li>
                                         <li class="d-none d-lg-block">
                                             <a href="wishlist.html">
-                                                <i class="pe-7s-like"></i>
+                                              @Html.Raw(settings["FavoriteIcon"])
                                             </a>
                                         </li>
                                         <li class="minicart-wrap me-3 me-lg-0">
                                             <a href="#miniCart" class="minicart-btn toolbar-btn">
-                                                <i class="pe-7s-shopbag"></i>
+                                                @Html.Raw(settings["BasketIcon"])
                                                 <span class="quantity">3</span>
                                             </a>
                                         </li>
@@ -283,7 +282,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="contact.html">Contact Us</a>
+                                            <a asp-area="ProniaAdmin" asp-controller="Home" asp-action="Index">Admin Panel</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -298,7 +297,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-3 col-6">
                                 <a href="index.html" class="header-logo">
-                                    <img src="~/assets/images/logo/dark.png" alt="Header Logo" />
+                                    <img src="~/assets/images/@settings["Logo"]" alt="Header Logo" />
                                 </a>
                             </div>
                             <div class="col-lg-6 d-none d-lg-block">
@@ -418,6 +417,7 @@
                                             <li>
                                                 <a href="contact.html">Contact Us</a>
                                             </li>
+                                            
                                         </ul>
                                     </nav>
                                 </div>
@@ -430,7 +430,7 @@
                                                class="search-btn bt"
                                                data-bs-toggle="modal"
                                                data-bs-target="#exampleModal">
-                                                <i class="pe-7s-search"></i>
+                                                @Html.Raw(settings["SearchIcon"])
                                             </a>
                                         </li>
                                         <li class="dropdown d-none d-lg-block">
@@ -440,7 +440,7 @@
                                                     data-bs-toggle="dropdown"
                                                     aria-label="setting"
                                                     aria-expanded="false">
-                                                <i class="pe-7s-users"></i>
+                                                @Html.Raw(settings["Community"])
                                             </button>
                                             <ul class="dropdown-menu"
                                                 aria-labelledby="stickysettingButton">
@@ -454,12 +454,13 @@
                                         </li>
                                         <li class="d-none d-lg-block">
                                             <a href="wishlist.html">
-                                                <i class="pe-7s-like"></i>
+                                                @Html.Raw(settings["FavoriteIcon"])
+
                                             </a>
                                         </li>
                                         <li class="minicart-wrap me-3 me-lg-0">
                                             <a href="#miniCart" class="minicart-btn toolbar-btn">
-                                                <i class="pe-7s-shopbag"></i>
+                                                @Html.Raw(settings["BasketIcon"])
                                                 <span class="quantity">3</span>
                                             </a>
                                         </li>
@@ -484,7 +485,7 @@
                         </div>
                         <div class="header-contact offcanvas-contact">
                             <i class="pe-7s-call"></i>
-                            <a href="tel://+00-123-456-789">+00 123 456 789</a>
+                            <a href="tel://@settings["Phone"]">@settings["Phone"]</a>
                         </div>
                         <div class="offcanvas-user-info">
                             <ul class="dropdown-wrap">
@@ -523,7 +524,7 @@
                                             id="settingButtonTwo"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false">
-                                        <i class="pe-7s-users"></i>
+                                        @Html.Raw(settings["Community"])
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end"
                                         aria-labelledby="settingButtonTwo">
@@ -537,7 +538,8 @@
                                 </li>
                                 <li>
                                     <a href="wishlist.html">
-                                        <i class="pe-7s-like"></i>
+                                        @Html.Raw(settings["FavoriteIcon"])
+
                                     </a>
                                 </li>
                             </ul>
@@ -753,7 +755,7 @@
                                     </li>
                                     <li>
                                         <a href="contact.html">
-                                            <span class="mm-text">Contact</span>
+                                            <span class="mm-text">Admin Panel</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -797,7 +799,7 @@
                                     <button class="search-btn"
                                             type="submit"
                                             aria-label="searchbtn">
-                                        <i class="pe-7s-search"></i>
+                                        @Html.Raw(settings["SearchIcon"])
                                     </button>
                                 </form>
                             </div>
@@ -914,19 +916,17 @@
                             <div class="footer-widget-item">
                                 <div class="footer-widget-logo">
                                     <a href="index.html">
-                                        <img src="~/assets/images/logo/dark.png" alt="Logo" />
+                                        <img src="~/assets/images/@settings["Logo"]" alt="Logo" />
                                     </a>
                                 </div>
                                 <p class="footer-widget-desc">
-                                    Lorem ipsum dolor sit amet, consec adipisl elit, sed do
-                                    eiusmod tempor
-                                    <br />
-                                    incidio ut labore et dolore magna.
+                                   @settings["Description"]
+                                   
                                 </p>
                                 <div class="social-link with-border">
                                     <ul>
                                         <li>
-                                            <a href="#"
+                                            <a href="@settings["Facebook"]"
                                                data-tippy="Facebook"
                                                data-tippy-inertia="true"
                                                data-tippy-animation="shift-away"
@@ -937,7 +937,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#"
+                                            <a href="@settings["Twitter"]"
                                                data-tippy="Twitter"
                                                data-tippy-inertia="true"
                                                data-tippy-animation="shift-away"
@@ -948,7 +948,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#"
+                                            <a href="@settings["Pinterest"]"
                                                data-tippy="Pinterest"
                                                data-tippy-inertia="true"
                                                data-tippy-animation="shift-away"
@@ -959,7 +959,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#"
+                                            <a href="@settings["Dribbble"]"
                                                data-tippy="Dribbble"
                                                data-tippy-inertia="true"
                                                data-tippy-animation="shift-away"
@@ -1042,10 +1042,10 @@
                         <div class="col-lg-3 pt-40">
                             <div class="footer-contact-info">
                                 <h3 class="footer-widget-title">Got Question? Call Us</h3>
-                                <a class="number" href="tel://123-456-789">123 456 789</a>
+                                <a class="number" href="tel://@settings["Phone"]">@settings["Phone"]</a>
                                 <div class="address">
                                     <ul>
-                                        <li>Your Address Goes Here</li>
+                                        <li>@settings["Adress"]</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1176,11 +1176,7 @@
                                         </select>
                                     </div>
                                     <p class="short-desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipisic elit, sed
-                                        do eiusmod tempo incid ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostru exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in voluptate
+                                      @settings["Description"]
                                     </p>
                                     <ul class="quantity-with-btn">
                                         <li class="quantity">
@@ -1196,7 +1192,7 @@
                                         </li>
                                         <li class="wishlist-btn-wrap">
                                             <a class="custom-circle-btn" href="wishlist.html">
-                                                <i class="pe-7s-like"></i>
+                                                @Html.Raw(settings["FavoriteIcon"])
                                             </a>
                                         </li>
                                         <li class="compare-btn-wrap">

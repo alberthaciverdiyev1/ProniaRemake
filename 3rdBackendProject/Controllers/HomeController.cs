@@ -45,8 +45,18 @@ namespace _3rdBackendProject.Controllers
 
 
             if (product == null) return NotFound();
+            //List<Product> products = _context.Products.Include(p => p.ProductImages).Where(p => p.CategoryId == product.CategoryId && p.Id != product.Id).ToList();
+            List<Product>products=_context.Products.Include(x=>x.ProductImages).ToList();
 
-            return View(product);
+            DetailsVM detailsVM = new DetailsVM
+            {
+                Product = product,
+                Products = products
+            };
+
+
+
+            return View(detailsVM);
         }
     
     }

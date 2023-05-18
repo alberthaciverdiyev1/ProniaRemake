@@ -285,3 +285,4 @@ C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\bin\
 C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\bin\Debug\net6.0\ServiceStack.Interfaces.dll

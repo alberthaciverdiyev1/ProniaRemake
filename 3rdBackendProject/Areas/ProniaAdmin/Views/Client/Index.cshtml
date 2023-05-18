@@ -1,0 +1,71 @@
+﻿@model List<Client>
+@{
+    int count = 0;
+}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Clients</h4>
+
+                    <a asp-controller="Client" asp-action="create" class="btn btn-success">Create Client</a>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Number
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                       Surname
+                                    </th>
+                                    <th>
+                                        Profession
+                                    </th>
+                                    <th>
+                                        Setting
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Client item in Model)
+                                {
+                                    count++;
+
+                                    <tr>
+                                        <td class="py-1">
+                                            @count
+                                        </td>
+                                        <td>
+                                            @item.Name
+                                        </td>
+                                        <td>
+                                            @item.Surname
+                                        </td>
+                                        <td>
+                                          @item.Profession.Name
+                                        </td>
+                                        <td>
+                                            <a asp-controller="Client" asp-action="update" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
+                                            <a asp-controller="Client" asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                            <a class="btn btn-primary">Info</a>
+                                        </td>
+                                    </tr>
+
+
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

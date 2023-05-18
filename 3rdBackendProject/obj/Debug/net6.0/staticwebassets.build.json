@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A+kMf2nwE4fd8IBXMnRnn167A16H5sj3qLOKu5w/tEo=",
+  "Hash": "cv+IZuheSHvQT8zglbGe+dvh+imN69GqM5Gklxz1Vtw=",
   "Source": "3rdBackendProject",
   "BasePath": "_content/3rdBackendProject",
   "Mode": "Default",
@@ -4367,6 +4367,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\card.png"
+    },
+    {
+      "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\d2863413-3dc1-47fc-9760-368e79192180FMX4OtXVQAEZ5rR.png",
+      "SourceId": "3rdBackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\",
+      "BasePath": "_content/3rdBackendProject",
+      "RelativePath": "assets/images/website-images/d2863413-3dc1-47fc-9760-368e79192180FMX4OtXVQAEZ5rR.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\d2863413-3dc1-47fc-9760-368e79192180FMX4OtXVQAEZ5rR.png"
     },
     {
       "Identity": "C:\\Users\\Alber\\OneDrive\\Desktop\\Backend\\3rdBackendProject\\3rdBackendProject\\wwwroot\\assets\\images\\website-images\\dark.png",

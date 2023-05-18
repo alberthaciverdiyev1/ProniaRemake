@@ -1,9 +1,9 @@
-﻿namespace _3rdBackendProject.Models
+﻿using _3rdBackendProject.Models.Base;
+
+namespace _3rdBackendProject.Models
 {
-    public class Users
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+    public class Users:BaseEntity
+    {   public string Name { get; set; }
         public string Surname { get; set; }
         public string Position { get; set; }
         public string Comment { get; set; }

@@ -1,10 +1,11 @@
-﻿using _3rdBackendProject.Models;
+﻿
+using _3rdBackendProject.Models.Base;
 
 namespace _3rdBackendProject.Models
 {
-    public class Category
+    public class Category:BaseEntity
     {
-        public int Id { get; set; }
+  
         public string Name { get; set; }
 
         public List<Product> Products { get; set; }

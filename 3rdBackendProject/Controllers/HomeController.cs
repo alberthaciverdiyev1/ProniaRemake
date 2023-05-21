@@ -35,6 +35,9 @@ namespace _3rdBackendProject.Controllers
 
         public IActionResult Detail(int? id)
         {
+
+      
+
             if (id == null || id < 1) return BadRequest();
 
             Product product = _context.Products

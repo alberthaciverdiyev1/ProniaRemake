@@ -2,6 +2,8 @@
 @inject LayoutService service;
 @{
     Dictionary<string, string> settings = await service.GetSettingAsync();
+    List<BasketItemsVM> basket = await service.GetBasket();
+    int total = 0;
 }
 
 
@@ -136,7 +138,7 @@
                                                     <a class="dropdown-item" href="my-account.html">My account</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                                                    <a class="dropdown-item" asp-action="Register" asp-controller="account">Login | Register</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -146,7 +148,7 @@
                                             </a>
                                         </li>
                                         <li class="minicart-wrap me-3 me-lg-0">
-                                            <a href="#miniCart" class="minicart-btn toolbar-btn">
+                                            <a asp-action="index" asp-controller="Basket">
                                                 @Html.Raw(settings["BasketIcon"])
                                                 <span class="quantity">3</span>
                                             </a>
@@ -238,7 +240,7 @@
                                                             <a href="my-account.html">My Account</a>
                                                         </li>
                                                         <li>
-                                                            <a href="login-register.html">Login | Register</a>
+                                                            <a asp-action="register" asp-controller="account" >Login | Register</a>
                                                         </li>
                                                         <li>
                                                             <a href="cart.html">Shopping Cart</a>
@@ -371,7 +373,7 @@
                                                                 <a href="my-account.html">My Account</a>
                                                             </li>
                                                             <li>
-                                                                <a href="login-register.html">Login | Register</a>
+                                                                <a asp-action="register" asp-controller="account">Login | Register</a>
                                                             </li>
                                                             <li>
                                                                 <a href="cart.html">Shopping Cart</a>
@@ -448,7 +450,7 @@
                                                     <a class="dropdown-item" href="my-account.html">My account</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                                                    <a class="dropdown-item" asp-action="register" asp-controller="account">Login | Register</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -532,7 +534,7 @@
                                             <a class="dropdown-item" href="my-account.html">My account</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                                            <a class="dropdown-item" asp-action="register" asp-controller="account">Login | Register</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -669,7 +671,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="login-register.html">
+                                                        <a asp-action="register" asp-controller="account">
                                                             <span class="mm-text">Login | Register</span>
                                                         </a>
                                                     </li>
@@ -823,7 +825,9 @@
                             </a>
                         </div>
                         <ul class="minicart-list">
-                            <li class="minicart-product">
+                         @foreach( BasketItemsVM item in basket){
+                               @* total += item.Price * (decimal)item.Count;*@
+                                <li class="minicart-product">
                                 <a class="product-item_remove" href="#">
                                     <i class="pe-7s-close"
                                        data-tippy="Remove"
@@ -836,59 +840,16 @@
                                 <a href="single-product-variable.html"
                                    class="product-item_img">
                                     <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-1-70x78.png"
+                                         src="~/assets/images/@item.Image"
                                          alt="Product Image" />
                                 </a>
                                 <div class="product-item_content">
                                     <a class="product-item_title"
-                                       href="single-product-variable.html">American Marigold</a>
-                                    <span class="product-item_quantity">1 x $23.45</span>
+                                       href="single-product-variable.html">@item.Name</a>
+                                    <span class="product-item_quantity">@item.Count x $@item.Price</span>
                                 </div>
                             </li>
-                            <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
-                                    <i class="pe-7s-close"
-                                       data-tippy="Remove"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away"
-                                       data-tippy-delay="50"
-                                       data-tippy-arrow="true"
-                                       data-tippy-theme="sharpborder"></i>
-                                </a>
-                                <a href="single-product-variable.html"
-                                   class="product-item_img">
-                                    <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-2-70x78.png"
-                                         alt="Product Image" />
-                                </a>
-                                <div class="product-item_content">
-                                    <a class="product-item_title"
-                                       href="single-product-variable.html">Black Eyed Susan</a>
-                                    <span class="product-item_quantity">1 x $25.45</span>
-                                </div>
-                            </li>
-                            <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
-                                    <i class="pe-7s-close"
-                                       data-tippy="Remove"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away"
-                                       data-tippy-delay="50"
-                                       data-tippy-arrow="true"
-                                       data-tippy-theme="sharpborder"></i>
-                                </a>
-                                <a href="single-product-variable.html"
-                                   class="product-item_img">
-                                    <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-3-70x78.png"
-                                         alt="Product Image" />
-                                </a>
-                                <div class="product-item_content">
-                                    <a class="product-item_title"
-                                       href="single-product-variable.html">Bleeding Heart</a>
-                                    <span class="product-item_quantity">1 x $30.45</span>
-                                </div>
-                            </li>
+                            }
                         </ul>
                     </div>
                     <div class="minicart-item_total">
@@ -907,346 +868,21 @@
         @RenderBody()
 
         <!-- Begin Footer Area -->
-        <div class="footer-area"
-             data-bg-image="~/assets/images/footer/bg/1-1920x465.jpg">
-            <div class="footer-top section-space-top-100 pb-60">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="footer-widget-item">
-                                <div class="footer-widget-logo">
-                                    <a href="index.html">
-                                        <img src="~/assets/images/@settings["Logo"]" alt="Logo" />
-                                    </a>
-                                </div>
-                                <p class="footer-widget-desc">
-                                   @settings["Description"]
-                                   
-                                </p>
-                                <div class="social-link with-border">
-                                    <ul>
-                                        <li>
-                                            <a href="@settings["Facebook"]"
-                                               data-tippy="Facebook"
-                                               data-tippy-inertia="true"
-                                               data-tippy-animation="shift-away"
-                                               data-tippy-delay="50"
-                                               data-tippy-arrow="true"
-                                               data-tippy-theme="sharpborder">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="@settings["Twitter"]"
-                                               data-tippy="Twitter"
-                                               data-tippy-inertia="true"
-                                               data-tippy-animation="shift-away"
-                                               data-tippy-delay="50"
-                                               data-tippy-arrow="true"
-                                               data-tippy-theme="sharpborder">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="@settings["Pinterest"]"
-                                               data-tippy="Pinterest"
-                                               data-tippy-inertia="true"
-                                               data-tippy-animation="shift-away"
-                                               data-tippy-delay="50"
-                                               data-tippy-arrow="true"
-                                               data-tippy-theme="sharpborder">
-                                                <i class="fa fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="@settings["Dribbble"]"
-                                               data-tippy="Dribbble"
-                                               data-tippy-inertia="true"
-                                               data-tippy-animation="shift-away"
-                                               data-tippy-delay="50"
-                                               data-tippy-arrow="true"
-                                               data-tippy-theme="sharpborder">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 pt-40">
-                            <div class="footer-widget-item">
-                                <h3 class="footer-widget-title">Useful Links</h3>
-                                <ul class="footer-widget-list-item">
-                                    <li>
-                                        <a href="#">About Pronia</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">How to shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Log in</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 pt-40">
-                            <div class="footer-widget-item">
-                                <h3 class="footer-widget-title">My Account</h3>
-                                <ul class="footer-widget-list-item">
-                                    <li>
-                                        <a href="#">Sign In</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">View Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">My Wishlist</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Track My Order</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Help</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 pt-40">
-                            <div class="footer-widget-item">
-                                <h3 class="footer-widget-title">Our Service</h3>
-                                <ul class="footer-widget-list-item">
-                                    <li>
-                                        <a href="#">Payment Methods</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Money Guarantee!</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Returns</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Shipping</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 pt-40">
-                            <div class="footer-contact-info">
-                                <h3 class="footer-widget-title">Got Question? Call Us</h3>
-                                <a class="number" href="tel://@settings["Phone"]">@settings["Phone"]</a>
-                                <div class="address">
-                                    <ul>
-                                        <li>@settings["Adress"]</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                                <a href="#">
-                                    <img src="~/assets/images/website-images/1.png"
-                                         alt="Payment Method" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="copyright">
-                                <span class="copyright-text">
-                                    © 2021 Pronia Made with
-                                    <i class="fa fa-heart text-danger"></i> by
-                                    <a href="https://hasthemes.com/"
-                                       rel="noopener"
-                                       target="_blank">HasThemes</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Area End Here -->
-        <!-- Begin Modal Area -->
-        <div class="modal quick-view-modal fade"
-             id="quickModal"
-             data-bs-backdrop="static"
-             data-bs-keyboard="false"
-             tabindex="-1"
-             aria-labelledby="quickModal"
-             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                                data-tippy="Close"
-                                data-tippy-inertia="true"
-                                data-tippy-animation="shift-away"
-                                data-tippy-delay="50"
-                                data-tippy-arrow="true"
-                                data-tippy-theme="sharpborder"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-wrap row">
-                            <div class="col-lg-6">
-                                <div class="modal-img">
-                                    <div class="swiper-container modal-slider">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="#" class="single-img">
-                                                    <img class="img-full"
-                                                         src="~/assets/images/website-images/1-1-570x633.jpg"
-                                                         alt="Product Image" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#" class="single-img">
-                                                    <img class="img-full"
-                                                         src="~/assets/images/website-images/1-2-570x633.jpg"
-                                                         alt="Product Image" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#" class="single-img">
-                                                    <img class="img-full"
-                                                         src="~/assets/images/website-images/1-3-570x633.jpg"
-                                                         alt="Product Image" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#" class="single-img">
-                                                    <img class="img-full"
-                                                         src="~/assets/images/website-images/1-4-570x633.jpg"
-                                                         alt="Product Image" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 pt-5 pt-lg-0">
-                                <div class="single-product-content">
-                                    <h2 class="title">American Marigold</h2>
-                                    <div class="price-box">
-                                        <span class="new-price">$23.45</span>
-                                    </div>
-                                    <div class="rating-box-wrap">
-                                        <div class="rating-box">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="review-status">
-                                            <a href="#">( 1 Review )</a>
-                                        </div>
-                                    </div>
-                                    <div class="selector-wrap color-option">
-                                        <span class="selector-title border-bottom-0">Color</span>
-                                        <select class="nice-select wide border-bottom-0 rounded-0">
-                                            <option value="default">Black & White</option>
-                                            <option value="blue">Blue</option>
-                                            <option value="green">Green</option>
-                                            <option value="red">Red</option>
-                                        </select>
-                                    </div>
-                                    <div class="selector-wrap size-option">
-                                        <span class="selector-title">Size</span>
-                                        <select class="nice-select wide rounded-0">
-                                            <option value="medium">Medium Size & Poot</option>
-                                            <option value="large">Large Size With Poot</option>
-                                            <option value="small">Small Size With Poot</option>
-                                        </select>
-                                    </div>
-                                    <p class="short-desc">
-                                      @settings["Description"]
-                                    </p>
-                                    <ul class="quantity-with-btn">
-                                        <li class="quantity">
-                                            <div class="cart-plus-minus">
-                                                <input class="cart-plus-minus-box"
-                                                       value="1"
-                                                       type="text" />
-                                            </div>
-                                        </li>
-                                        <li class="add-to-cart">
-                                            <a class="btn btn-custom-size lg-size btn-pronia-primary"
-                                               href="cart.html">Add to cart</a>
-                                        </li>
-                                        <li class="wishlist-btn-wrap">
-                                            <a class="custom-circle-btn" href="wishlist.html">
-                                                @Html.Raw(settings["FavoriteIcon"])
-                                            </a>
-                                        </li>
-                                        <li class="compare-btn-wrap">
-                                            <a class="custom-circle-btn" href="compare.html">
-                                                <i class="pe-7s-refresh-2"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="service-item-wrap pb-0">
-                                        <li class="service-item">
-                                            <div class="service-img">
-                                                <img src="~/assets/images/shipping/icon/car.png"
-                                                     alt="Shipping Icon" />
-                                            </div>
-                                            <div class="service-content">
-                                                <span class="title">
-                                                    Free <br />
-                                                    Shipping
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="service-item">
-                                            <div class="service-img">
-                                                <img src="~/assets/images/shipping/icon/card.png"
-                                                     alt="Shipping Icon" />
-                                            </div>
-                                            <div class="service-content">
-                                                <span class="title">
-                                                    Safe <br />
-                                                    Payment
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="service-item">
-                                            <div class="service-img">
-                                                <img src="~/assets/images/shipping/icon/service.png"
-                                                     alt="Shipping Icon" />
-                                            </div>
-                                            <div class="service-content">
-                                                <span class="title">
-                                                    Safe <br />
-                                                    Payment
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Area End Here -->
+
+
+
+
+
+        @await Component.InvokeAsync("Footer");
+
+
+
+
+
+
+
+
+
         <!-- Begin Scroll To Top -->
         <a class="scroll-to-top" href="">
             <i class="fa fa-angle-double-up"></i>

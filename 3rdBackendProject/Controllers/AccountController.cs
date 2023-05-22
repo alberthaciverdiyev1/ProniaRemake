@@ -27,25 +27,24 @@ namespace _3rdBackendProject.Controllers
         {
 
             string radioGender;
-            if (!ModelState.IsValid) return View();
-            Regex checkEmail = new Regex(@"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
-            + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(@"
-            + @"(([-a-z0-9]+\.)*[a-z]{2,}|"
-            + @"(\d{1,3}\.){3}\d{1,3}))"
-            + @"(:\d{4})?"
-            + @"(([-a-z0-9]+\.)*[a-z0-9]{2,})?$");
-
-            if (!checkEmail.IsMatch(newUser.Email))
-            { return View(); }
-
             if (newUser.IsMale == true)
             {radioGender = "Male"; } 
 
             else { radioGender = "Female"; }
 
 
-            newUser.Surname.CheckUserName();
-            newUser.Name.CheckUserName();
+               if (!ModelState.IsValid) return View();
+            Regex checkEmail = new Regex(@"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
+            + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(@"
+            + @"(([-a-z0-9]+\.)*[a-z]{2,}|"
+            + @"(\d{1,3}\.){3}\d{1,3}))"
+            + @"(:\d{4})?"
+            + @"(([-a-z0-9]+\.)*[a-z0-9]{2,})?$"); 
+            
+            if (!checkEmail.IsMatch(newUser.Email))
+            { return View(); }
+
+            newUser.Surname.CheckUserName();                                                                                                                                                                                                                          newUser.Name.CheckUserName();
             newUser.Name.Capitalize();
             newUser.Surname.Capitalize();
 

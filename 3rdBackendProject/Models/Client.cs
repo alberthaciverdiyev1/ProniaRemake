@@ -1,4 +1,5 @@
 ﻿using _3rdBackendProject.Models.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace _3rdBackendProject.Models
 {
@@ -8,5 +9,7 @@ namespace _3rdBackendProject.Models
         public string? Surname { get; set; }
         public Profession? Profession { get; set; }
         public int ProfessionId { get; set; }
+        [NotMapped]
+        public IFormFile? Photo { get; set; }
     }
 }

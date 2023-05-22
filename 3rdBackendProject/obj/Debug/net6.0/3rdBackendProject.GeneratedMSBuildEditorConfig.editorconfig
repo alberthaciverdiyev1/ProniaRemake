@@ -9,113 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _3rdBackendProject
 build_property.RootNamespace = _3rdBackendProject
-build_property.ProjectDir = C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject\
+build_property.ProjectDir = C:\Users\ca.r215.13\Desktop\ProniaRemake\3rdBackendProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Alber\OneDrive\Desktop\Backend\3rdBackendProject\3rdBackendProject
+build_property.MSBuildProjectDirectory = C:\Users\ca.r215.13\Desktop\ProniaRemake\3rdBackendProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Create.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Update.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Client/Create.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Client/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Client/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Client/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Home/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Shared/_Layout.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Create.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcU2xpZGVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcU2xpZGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Update.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/Slide/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcU2xpZGVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/_ViewImports.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Areas/ProniaAdmin/Views/_ViewStart.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Areas/ProniaAdmin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvbmlhQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/About/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Account/Register.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Basket/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Basket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Error/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Error/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Home/Detail.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Home/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Home/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Shared/Components/Footer/Default.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Shared/Components/Footer/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Shared/_AllProductsPartialView.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Shared/_AllProductsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGxQcm9kdWN0c1BhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Shared/_Layout.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Shared/_SlideProductsPartialView.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Shared/_SlideProductsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TbGlkZVByb2R1Y3RzUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/Shop/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/WishList/Index.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/WishList/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/_ViewImports.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Desktop/Backend/3rdBackendProject/3rdBackendProject/Views/_ViewStart.cshtml]
+[C:/Users/ca.r215.13/Desktop/ProniaRemake/3rdBackendProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
